@@ -1,0 +1,15 @@
+#container {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#quote, #entropy, #available {
+  width: 100%;
+}
+
+td, th {
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+

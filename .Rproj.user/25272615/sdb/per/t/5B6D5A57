@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\nlibrary(shiny)\n\nshinyUI(fluidPage(\n  # include JavaScript file to build and edit HTML table\n  # include custom CSS to style HTML table and cells\n  tags$head(\n    HTML(\"<script type='text/javascript' src='jshtml.js'></script>\"),\n    tags$link(rel = \"stylesheet\", type = \"text/css\", href = \"styles.css\")\n  ),\n  \n\n  # Application title\n  fluidRow(\n    column(8, offset = 2,\n      tags$h2(\"Shannon's Entropy Experiment\", align = \"center\")\n    )\n  ),\n  br(),\n  \n  \n  fluidRow(\n    column(8, offset = 2,\n      \n    fluidRow(\n      column(6,\n        actionButton(\"quote\", \"Generate New Quote\")\n      ),\n      column(6,\n        actionButton(\"entropy\", \"Calculate Entropy\")\n      )\n    ),\n    br(),\n    fluidRow(\n      column(12,\n        tags$h4(textOutput(\"available\"), align = \"center\"),\n        textOutput(\"txt\"),\n        hr(),\n        tags$table(id = \"container\")\n      )\n    )\n  )\n  ),\n  \n  # send keypress event to Shiny server for processing\n  tags$script('\n    $(document).on(\"keypress\", function(e) {\n      var code = e.keyCode\n      var stamp = e.timeStamp\n      Shiny.onInputChange(\"mydata\", [code, stamp]);\n    });\n  ')\n  \n))\n",
+    "created" : 1458241756231.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "938541234",
+    "id" : "5B6D5A57",
+    "lastKnownWriteTime" : 1459722338,
+    "last_content_update" : 0,
+    "path" : "~/Development/susan/probability/shannon/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

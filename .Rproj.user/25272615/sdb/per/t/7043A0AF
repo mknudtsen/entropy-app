@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#container {\n  table-layout: fixed;\n  width: 100%;\n}\n\n#quote, #entropy, #available {\n  width: 100%;\n}\n\ntd, th {\n  height: 40px;\n  text-align: center;\n  vertical-align: middle;\n}\n\n",
+    "created" : 1459443436432.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3983122897",
+    "id" : "7043A0AF",
+    "lastKnownWriteTime" : 1459714188,
+    "last_content_update" : 0,
+    "path" : "~/Development/susan/probability/shannon/www/styles.css",
+    "project_path" : "www/styles.css",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "css"
+}
