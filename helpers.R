@@ -66,6 +66,9 @@ quotes <- list(
   "harry survived with only a lightning shaped scar on his forehead as a memento of the attack"
 )
 
+# used to confirm correct entropy calculation -- these counts should return entropy of 0.54546356
+test <- c(rep(1, 27), 3, rep(1, 20), 4, rep(1, 8), 4, 1, 4, rep(1, 7), 2, 1, 1, 11, rep(1, 12), 9, rep(1, 9))
+
 
 
 
