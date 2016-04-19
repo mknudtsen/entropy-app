@@ -36,11 +36,8 @@ $(document).ready(function() {
         var idx = message.idx - 1;
         var cnt = message.cnt;
         var len = message.len;
-        console.log("idx is :" + idx);
-        console.log(len);
         if (idx < len) {
           p = document.getElementById((idx) + "Cnt");
-          console.log(p);
           p.innerHTML = cnt;
         }
       });
